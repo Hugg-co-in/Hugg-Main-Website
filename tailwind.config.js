@@ -1,11 +1,12 @@
+import bgImage1 from "./src/assets/img/hero-bg.jpg";
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{js,jsx}',
-    './components/**/*.{js,jsx}',
-    './app/**/*.{js,jsx}',
-    './src/**/*.{js,jsx}',
+    "./pages/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}",
+    "./app/**/*.{js,jsx}",
+    "./src/**/*.{js,jsx}",
   ],
   prefix: "",
   theme: {
@@ -71,7 +72,11 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      backgroundImage: {
+        bgImg1: "url('./src/assets/img/hero-bg.jpg')",
+        // "footer-texture": "url('/img/footer-texture.png')",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
