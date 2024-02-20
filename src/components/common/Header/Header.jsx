@@ -82,7 +82,7 @@ const Header = () => {
     // },
   ];
   return (
-    <Card className="shadow sticky z-50 top-0 max-[480px]:m-0 max-[480px]:p-0 border-gray-200 rounded-none dark:bg-black bg-black">
+    <Card className="shadow sticky z-50 top-0 max-[480px]:m-0 max-[480px]:p-0 border-none rounded-none dark:bg-black bg-black">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <div className="md:order-1 max-[767px]:order-1">
           <Link to="/">

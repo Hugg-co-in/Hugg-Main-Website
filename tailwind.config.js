@@ -1,4 +1,3 @@
-import bgImage1 from "./src/assets/img/hero-bg.jpg";
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
@@ -75,6 +74,7 @@ module.exports = {
       backgroundImage: {
         bgImg1: "url('./src/assets/img/hero-bg.jpg')",
         // "footer-texture": "url('/img/footer-texture.png')",
+        bgImg2: "url('./src/assets/img/slide/graphics.png')",
       },
     },
   },
