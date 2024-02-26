@@ -2,9 +2,8 @@ import React from "react";
 
 import { Laugh, Smartphone, UsersRound } from "lucide-react";
 
-const HomePart1 = () => {
+const Hero = () => {
   return (
-    // <!-- ======= Hero Section ======= -->
     <section className="bg-bgImg1 w-full h-[100vh] max-[480px]:h-full bg-cover bg-fixed bg-center">
       <div className="bg-black bg-opacity-60 w-full h-full flex items-center justify-center">
         <div class="relative text-center">
@@ -68,4 +67,4 @@ const HomePart1 = () => {
   );
 };
 
-export default HomePart1;
+export default Hero;

@@ -1,5 +1,5 @@
 import React from "react";
-import ServicesCard from "./Services/ServicesCard";
+import ServicesCard from "./ServicesCard";
 import {
   Smile,
   FileText,
@@ -8,11 +8,11 @@ import {
   Building2,
   Sheet,
 } from "lucide-react";
-import { Card } from "../ui/card";
+import { Card } from "@/components/ui/card";
 
-const HomePart4 = () => {
+const Services = () => {
   return (
-    <Card class="border-none md:mx-8 mx-2 pt-16">
+    <Card class="border-none md:mx-8 mx-2 py-10">
       <div class="ml-4">
         <div className="flex flex-row">
           <span>
@@ -70,4 +70,4 @@ const HomePart4 = () => {
   );
 };
 
-export default HomePart4;
+export default Services;

@@ -1,18 +1,32 @@
 import React from "react";
-import HomePart1 from "./HomePart1";
-import HomePart2 from "./HomePart2";
-import HomePart3 from "./HomePart3";
-import HomePart4 from "./HomePart4";
-// import Cta from "../Cta/Cta";
+import Cta from "./Cta/Cta";
+import Counts from "./Counts/Counts";
+import Blogs from "./Blogs/Blogs";
+import Achievements from "./Achievements/Achievements";
+import Contact from "./Contact/Contact";
+import AutoPlaySlider from "./AutoPlaySlider";
+import Services from "./Services/Services";
+import Hero from "./Hero/Hero";
+import About from "./About/About";
+import Features from "./Features/Features";
+import Client from "./Client/Client";
+import Testimonials from "./Testimonials/Testimonials";
 
 const Home = () => {
   return (
     <>
-      <HomePart1 />
-      <HomePart2 />
-      <HomePart3 />
-      <HomePart4 />
-      {/* <Cta /> */}
+      <Hero />
+      <About />
+      <Client />
+      <Features />
+      <Services />
+      <Cta />
+      <Counts />
+      <Testimonials />
+      <Blogs />
+      <Achievements />
+      <Contact />
+      {/* <AutoPlaySlider /> */}
     </>
   );
 };

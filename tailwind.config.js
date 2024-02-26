@@ -75,6 +75,7 @@ module.exports = {
         bgImg1: "url('./src/assets/img/hero-bg.jpg')",
         // "footer-texture": "url('/img/footer-texture.png')",
         bgImg2: "url('./src/assets/img/slide/graphics.png')",
+        testimonialBgImg: "url('./src/assets/img/rev.jpg')",
       },
     },
   },
