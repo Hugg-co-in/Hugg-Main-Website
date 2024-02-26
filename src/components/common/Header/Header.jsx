@@ -84,7 +84,7 @@ const Header = () => {
   return (
     <Card className="shadow sticky z-50 top-0 max-[480px]:m-0 max-[480px]:p-0 border-none rounded-none dark:bg-black bg-black">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <div className="md:order-1 max-[767px]:order-1">
+        <div className="min-[901px]:order-1 max-[900px]:order-1">
           <Link to="/">
             <div>
               <Logo />
@@ -92,8 +92,8 @@ const Header = () => {
           </Link>
         </div>
         {/* ----------------------------------------------------------- */}
-        <div className="md:order-3 max-[767px]:order-2 flex flex-row">
-          <div className="flex items-center space-x-3 md:space-x-0 rtl:space-x-reverse max-[767px]:mr-4 md:order-3 max-[767px]:order-2">
+        <div className="min-[901px]:order-3 max-[900px]:order-2 flex flex-row">
+          <div className="flex items-center space-x-3 min-[901px]:space-x-0 rtl:space-x-reverse max-[900px]:mr-4 min-[901px]:order-3 max-[900px]:order-2">
             {/* <span className="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"> */}
             {/* <UserMenu /> */}
             <Button className="border-[#17AD94] border-2 bg-none bg-transparent">
@@ -102,7 +102,7 @@ const Header = () => {
             {/* </span> */}
           </div>
           {/* ----------------------------------------------------------- */}
-          <div className="items-center justify-between hidden w-full max-[767px]:flex max-[767px]:w-auto  max-[767px]:order-3">
+          <div className="items-center justify-between hidden w-full max-[900px]:flex max-[900px]:w-auto  max-[900px]:order-3">
             {/* <span className="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"> */}
             <NavMenu />
             {/* </span> */}
@@ -116,7 +116,7 @@ const Header = () => {
         </div>
         {/* ------------------------------------ */}
 
-        <div className="hidden w-full md:flex md:w-auto md:order-2">
+        <div className="hidden w-full min-[901px]:flex min-[901px]:w-auto min-[901px]:order-2">
           <CardContent className="p-0">
             <NavigationMenu>
               <NavigationMenuList>
