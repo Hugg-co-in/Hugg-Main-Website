@@ -173,7 +173,6 @@ const Header = () => {
           </CardContent>
         </div>
       </div>
-      <hr />
     </Card>
   );
 };
