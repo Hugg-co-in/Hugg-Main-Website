@@ -6,18 +6,18 @@ import { SquareUser, Wifi, ReceiptText, Shield } from "lucide-react";
 const HomePart3 = () => {
   return (
     //  <!-- ======= Features Section ======= -->
-    <section class="">
+    <section className="">
       <div className="container max-[767px]:p-0">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
-          <div class="" data-aos="fade-right">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
+          <div className="" data-aos="fade-right">
             <img src={img1} className="min-h-[400px] w-full" />
           </div>
           <div className="max-[767px]:px-6">
-            <div class="flex flex-row">
+            <div className="flex flex-row">
               <span className="my-auto">
                 <SquareUser className="text-[#17AD94] w-12 h-12" />
               </span>
-              {/* <i class="bi-person-badge"></i> */}
+              {/* <i className="bi-person-badge"></i> */}
               <span className="ml-5">
                 <h4 className="text-xl font-bold mb-3">One-on-One therapy</h4>
                 <p className="text-base text-[#848484]">
@@ -25,7 +25,7 @@ const HomePart3 = () => {
                 </p>
               </span>
             </div>
-            <div class="flex flex-row mt-10">
+            <div className="flex flex-row mt-10">
               <span className="my-auto">
                 <Wifi className="text-[#17AD94] w-12 h-12" />
               </span>
@@ -36,7 +36,7 @@ const HomePart3 = () => {
                 </p>
               </span>
             </div>
-            <div class="flex flex-row mt-10">
+            <div className="flex flex-row mt-10">
               <span className="my-auto">
                 <ReceiptText className=" text-[#17AD94] w-12 h-12" />
               </span>
@@ -48,7 +48,7 @@ const HomePart3 = () => {
                 </p>
               </span>
             </div>
-            <div class="flex flex-row mt-10">
+            <div className="flex flex-row mt-10">
               <span className="my-auto">
                 <Shield className=" text-[#17AD94] w-12 h-12" />
               </span>

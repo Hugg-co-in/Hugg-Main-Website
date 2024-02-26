@@ -19,14 +19,14 @@ const Part1 = () => {
                 </Link>
               </div>
               <div className="flex flex-row space-x-4 md:pt-7">
-                <span class="bg-[#292929] rounded-sm flex items-center justify-center my-auto p-3">
+                <span className="bg-[#292929] rounded-sm flex items-center justify-center my-auto p-3">
                   <Link>
-                    <Linkedin class="w-[24px] h-[24px] text-white" />
+                    <Linkedin className="w-[24px] h-[24px] text-white" />
                   </Link>
                 </span>
-                <span class="bg-[#292929] rounded-sm flex items-center justify-center my-auto p-3">
+                <span className="bg-[#292929] rounded-sm flex items-center justify-center my-auto p-3">
                   <Link>
-                    <Instagram class="w-[24px] h-[24px] text-white" />
+                    <Instagram className="w-[24px] h-[24px] text-white" />
                   </Link>
                 </span>
               </div>
@@ -72,7 +72,7 @@ const Part1 = () => {
               </ul>
             </div>
             {/* ------Newsletter-------------- */}
-            <div class="col-lg-4 col-md-6 footer-newsletter text-white">
+            <div className="col-lg-4 col-md-6 footer-newsletter text-white">
               <h2 className="mb-3 text-base font-semibold text-white">
                 Our&nbsp;Newsletter
               </h2>
@@ -82,10 +82,10 @@ const Part1 = () => {
               </p>
               <span>
                 <a
-                  class=""
+                  className=""
                   href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7038382516180762624"
                   target="_blank">
-                  <Button class="bg-[#0a66c2] rounded-full py-2 px-4 ">
+                  <Button className="bg-[#0a66c2] rounded-full py-2 px-4 ">
                     Subscribe&nbsp;on&nbsp;LinkedIn
                   </Button>
                 </a>

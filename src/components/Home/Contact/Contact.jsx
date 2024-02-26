@@ -2,8 +2,8 @@ import React from "react";
 import { Mail, Instagram, InstagramIcon } from "lucide-react";
 const Contact = () => {
   return (
-    <div class="container py-10">
-      <div class="mb-10">
+    <div className="container py-10">
+      <div className="mb-10">
         <div className="flex flex-row">
           <span>
             <h2 className="text-gray-400 uppercase font-bold">Contact</h2>
@@ -19,9 +19,9 @@ const Contact = () => {
       </div>
 
       <div className="flex flex-col ml-2">
-        <div class="flex flex-row mb-8">
-          <span class="bg-[#17AD94] rounded-sm flex items-center justify-center my-auto p-3">
-            <Mail class="w-[24px] h-[24px]" />
+        <div className="flex flex-row mb-8">
+          <span className="bg-[#17AD94] rounded-sm flex items-center justify-center my-auto p-3">
+            <Mail className="w-[24px] h-[24px]" />
           </span>
           <span className="ml-8">
             <h4 className=" text-xl font-[600] mb-2">Email:</h4>
@@ -29,9 +29,9 @@ const Contact = () => {
           </span>
         </div>
 
-        <div class="flex flex-row">
-          <span class="bg-[#17AD94] rounded-sm flex items-center justify-center my-auto p-3">
-            <Instagram class="w-[24px] h-[24px]" />
+        <div className="flex flex-row">
+          <span className="bg-[#17AD94] rounded-sm flex items-center justify-center my-auto p-3">
+            <Instagram className="w-[24px] h-[24px]" />
           </span>
           <span className="ml-8">
             <h4 className="text-xl font-[600] mb-2">WhatsApp:</h4>

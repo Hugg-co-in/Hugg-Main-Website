@@ -29,8 +29,8 @@ const Achievements = () => {
     },
   ];
   return (
-    <Card class="border-none md:mx-8 mx-2 py-20">
-      <div class="ml-4">
+    <Card className="border-none md:mx-8 mx-2 py-20">
+      <div className="ml-4">
         <div className="flex flex-row">
           <span>
             <h2 className="text-gray-400 uppercase font-bold">Achievements</h2>

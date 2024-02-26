@@ -41,8 +41,8 @@ const Blogs = () => {
     },
   ];
   return (
-    <div class="container">
-      <div class="section-title">
+    <div className="container">
+      <div className="section-title">
         <div className="flex flex-row">
           <span>
             <h2 className="text-gray-400 uppercase font-bold">Blogs</h2>
@@ -56,7 +56,7 @@ const Blogs = () => {
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12 items-center mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12 items-center mx-auto">
         {blogsData.map((blog, index) => (
           <BlogsCard key={index} blogsData={blog} />
         ))}

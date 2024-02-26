@@ -7,12 +7,12 @@ import smileImg from "../../../assets/img/smiles.jpg";
 const Counts = () => {
   return (
     <section>
-      <div class="flex flex-col min-[1180px]:flex-row px-0 sm:px-12 py-12">
+      <div className="flex flex-col min-[1180px]:flex-row px-0 sm:px-12 py-12">
         <div className="flex items-stretch justify-center h-96 w-full ">
           <img src={smileImg} className="object-cover w-full min-h-[400px]" />
         </div>
 
-        <div class="flex flex-col justify-center py-8 px-2 min-[1180px]:ml-8">
+        <div className="flex flex-col justify-center py-8 px-2 min-[1180px]:ml-8">
           <h3 className="font-bold text-4xl text-black">
             We are spreading smiles
           </h3>
@@ -21,7 +21,7 @@ const Counts = () => {
             We assure you to make you smile and with every service we assure
             mental health wellbeing.
           </p>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
             <CountBox
               Icon={Smile}
               data={"412"}

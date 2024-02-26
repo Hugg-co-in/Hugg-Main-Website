@@ -2,8 +2,8 @@ import React from "react";
 import { Smile, Users, Clock, Award } from "lucide-react";
 const CountBox = ({ Icon, data, contentPart1, contentPart2 }) => {
   return (
-    <div class="">
-      <div class="flex flex-row">
+    <div className="">
+      <div className="flex flex-row">
         <span className="text-4xl float-left my-auto">
           <Icon className="text-[#17AD94] w-12 h-10" />
         </span>

@@ -2,54 +2,54 @@ import React from "react";
 
 const Client = () => {
   return (
-    <section id="clients" class="clients">
-      <div class="container" data-aos="zoom-in">
-        <div class="clients-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide">
+    <section id="clients" className="clients">
+      <div className="container" data-aos="zoom-in">
+        <div className="clients-slider swiper">
+          <div className="swiper-wrapper align-items-center">
+            <div className="swiper-slide">
               <img
                 src="assets/img/hugg-brands/ecell.jpeg"
-                class="img-fluid"
+                className="img-fluid"
                 alt=""
               />
             </div>
-            <div class="swiper-slide">
+            <div className="swiper-slide">
               <img
                 src="assets/img/hugg-brands/images.png"
-                class="img-fluid"
+                className="img-fluid"
                 alt=""
               />
             </div>
-            <div class="swiper-slide">
+            <div className="swiper-slide">
               <img
                 src="assets/img/hugg-brands/impunjab.png"
-                class="img-fluid"
+                className="img-fluid"
                 alt=""
               />
             </div>
-            <div class="swiper-slide">
+            <div className="swiper-slide">
               <img
                 src="assets/img/hugg-brands/edc.jpeg"
-                class="img-fluid"
+                className="img-fluid"
                 alt=""
               />
             </div>
-            <div class="swiper-slide">
+            <div className="swiper-slide">
               <img
                 src="assets/img/hugg-brands/brandmonkey.jpeg"
-                class="img-fluid"
+                className="img-fluid"
                 alt=""
               />
             </div>
-            <div class="swiper-slide">
+            <div className="swiper-slide">
               <img
                 src="assets/img/hugg-brands/unyc.jpeg"
-                class="img-fluid"
+                className="img-fluid"
                 alt=""
               />
             </div>
           </div>
-          <div class="swiper-pagination"></div>
+          <div className="swiper-pagination"></div>
         </div>
       </div>
     </section>

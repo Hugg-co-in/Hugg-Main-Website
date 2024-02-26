@@ -6,9 +6,9 @@ const Hero = () => {
   return (
     <section className="bg-bgImg1 w-full h-[100vh] max-[480px]:h-full bg-cover bg-fixed bg-center">
       <div className="bg-black bg-opacity-60 w-full h-full flex items-center justify-center">
-        <div class="relative text-center">
-          <div class="flex flex-row justify-center">
-            <div class="md:w-1/2 lg:w-2/3 text-white">
+        <div className="relative text-center">
+          <div className="flex flex-row justify-center">
+            <div className="md:w-1/2 lg:w-2/3 text-white">
               <h1 className="text-6xl max-[767px]:mt-8 max-[767px]:text-4xl font-bold ">
                 your mental wellbeing partner
                 <span className="text-[#17AD94]">.</span>
@@ -20,8 +20,8 @@ const Hero = () => {
           </div>
           {/* ------------------------------------------------ */}
           <div className="md:w-3/4 mx-auto max-[767px]:mx-2 max-[767px]:py-8 md:pt-16">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div class="py-8 px-5 transition ease-in-out duration-300 border border-white border-opacity-30 h-full hover:border-[#17AD94]">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="py-8 px-5 transition ease-in-out duration-300 border border-white border-opacity-30 h-full hover:border-[#17AD94]">
                 <span className="flex text-[#17AD94] place-content-center mb-3">
                   <Laugh className="w-9 h-9" />
                 </span>
@@ -34,7 +34,7 @@ const Hero = () => {
                 </h3>
               </div>
 
-              <div class="py-8 px-5 transition ease-in-out duration-300 border border-white border-opacity-30 h-full hover:border-[#17AD94]">
+              <div className="py-8 px-5 transition ease-in-out duration-300 border border-white border-opacity-30 h-full hover:border-[#17AD94]">
                 <span className="flex text-[#17AD94] place-content-center mb-3">
                   <Smartphone className="w-9 h-9" />
                 </span>
@@ -47,7 +47,7 @@ const Hero = () => {
                 </h3>
               </div>
 
-              <div class="py-8 px-5 transition ease-in-out duration-300 border border-white border-opacity-30 h-full hover:border-[#17AD94] ">
+              <div className="py-8 px-5 transition ease-in-out duration-300 border border-white border-opacity-30 h-full hover:border-[#17AD94] ">
                 <span className="flex text-[#17AD94] place-content-center mb-3">
                   <UsersRound className="w-9 h-9" />
                 </span>

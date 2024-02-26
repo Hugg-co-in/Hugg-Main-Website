@@ -4,7 +4,7 @@ const Cta = () => {
   return (
     <div className="bg-bgImg2 w-[100%] bg-cover bg-fixed bg-center">
       <div className="bg-black bg-opacity-60 w-full h-full flex items-center justify-center  py-[60px] px-0">
-        <div class="text-center text-white">
+        <div className="text-center text-white">
           <h3 className="text-3xl font-bold">
             We made a meditation portal to make you calm
           </h3>
@@ -16,7 +16,7 @@ const Cta = () => {
             gateway to inner peace, mindfulness, and self-discovery!
           </p>
           <a
-            class=" font-[600] text-[16px] inline-block py-[8px] px-[28px] rounded-[4px] transition-[0.5s] mt-[10px] border-2 border-solid border-white text-white hover:bg-[#17AD94] hover:border-[#17AD94] hover:text-black"
+            className=" font-[600] text-[16px] inline-block py-[8px] px-[28px] rounded-[4px] transition-[0.5s] mt-[10px] border-2 border-solid border-white text-white hover:bg-[#17AD94] hover:border-[#17AD94] hover:text-black"
             href="https://meditation.hugg.co.in/">
             Meditation Portal
           </a>

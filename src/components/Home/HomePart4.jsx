@@ -12,8 +12,8 @@ import { Card } from "../ui/card";
 
 const HomePart4 = () => {
   return (
-    <Card class="border-none md:mx-8 mx-2 pt-16">
-      <div class="ml-4">
+    <Card className="border-none md:mx-8 mx-2 pt-16">
+      <div className="ml-4">
         <div className="flex flex-row">
           <span>
             <h2 className="text-gray-400 uppercase font-bold">Services</h2>
@@ -27,7 +27,7 @@ const HomePart4 = () => {
         </p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-12 items-center mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-12 items-center mx-auto">
         <ServicesCard
           Icon={Smile}
           url="inner-page.html"
