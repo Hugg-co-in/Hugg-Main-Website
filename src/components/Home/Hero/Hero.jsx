@@ -4,7 +4,7 @@ import { Laugh, Smartphone, UsersRound } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="bg-bgImg1 w-full h-[100vh] max-[480px]:h-full bg-cover bg-fixed bg-center">
+    <section id="hero" className="bg-bgImg1 w-full h-[100vh] max-[480px]:h-full bg-cover bg-fixed bg-center">
       <div className="bg-black bg-opacity-60 w-full h-full flex items-center justify-center">
         <div className="relative text-center">
           <div className="flex flex-row justify-center">

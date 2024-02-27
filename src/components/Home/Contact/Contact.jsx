@@ -2,7 +2,7 @@ import React from "react";
 import { Mail, Instagram, InstagramIcon } from "lucide-react";
 const Contact = () => {
   return (
-    <div className="container py-10">
+    <div id="contact" className="container py-10">
       <div className="mb-10">
         <div className="flex flex-row">
           <span>

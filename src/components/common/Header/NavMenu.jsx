@@ -13,35 +13,37 @@ import {
 import { NavLink } from "react-router-dom";
 import { Menu } from "lucide-react";
 import React from "react";
+import AnchorLink from "react-anchor-link-smooth-scroll";
+
 const NavMenu = () => {
   const navItems = [
     {
       name: "Home",
-      slug: "/",
+      slug: "#hero",
       active: true,
       css: "",
     },
     {
       name: "About",
-      slug: "/about-us",
+      slug: "#about-us",
       active: true,
       css: " underline",
     },
     {
       name: "Services",
-      slug: "/services",
+      slug: "#services",
       active: true,
       css: " underline",
     },
     {
       name: "Team",
-      slug: "/team",
+      slug: "#team",
       active: true,
       css: " underline",
     },
     {
       name: "Contact",
-      slug: "/contact",
+      slug: "#contact",
       active: true,
       css: " underline",
     },
@@ -74,7 +76,7 @@ const NavMenu = () => {
         <DropdownMenuGroup>
           {navItems.map((nav) => (
             <DropdownMenuItem key={nav.name}>
-              <NavLink to={nav.slug}>{nav.name}</NavLink>
+              <AnchorLink href={nav.slug}>{nav.name}</AnchorLink>
             </DropdownMenuItem>
           ))}
         </DropdownMenuGroup>

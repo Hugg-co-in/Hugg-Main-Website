@@ -29,37 +29,38 @@ import {
   MenubarSubTrigger,
   MenubarTrigger,
 } from "@/components/ui/menubar";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 // ###########################################################
 const Header = () => {
   const navItems = [
     {
       name: "Home",
-      slug: "/",
+      slug: "#hero",
       active: true,
       css: "",
     },
     {
       name: "About",
-      slug: "/about-us",
+      slug: "#about-us",
       active: true,
       css: " underline",
     },
     {
       name: "Services",
-      slug: "/services",
+      slug: "#services",
       active: true,
       css: " underline",
     },
     {
       name: "Team",
-      slug: "/team",
+      slug: "#team",
       active: true,
       css: " underline",
     },
     {
       name: "Contact",
-      slug: "/contact",
+      slug: "#contact",
       active: true,
       css: " underline",
     },
@@ -124,8 +125,8 @@ const Header = () => {
                 {navItems.map((item) =>
                   item.active ? (
                     <NavigationMenuItem key={item.name}>
-                      <NavLink
-                        to={item.slug}
+                      <AnchorLink
+                        href={item.slug}
                         className={({ isActive, isPending }) =>
                           isPending
                             ? "pending"
@@ -139,7 +140,7 @@ const Header = () => {
                           className={`${navigationMenuTriggerStyle()} bg-black text-white`}>
                           {item.name}
                         </NavigationMenuLink>
-                      </NavLink>
+                      </AnchorLink>
                     </NavigationMenuItem>
                   ) : null
                 )}

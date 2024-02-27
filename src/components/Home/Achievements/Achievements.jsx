@@ -29,7 +29,7 @@ const Achievements = () => {
     },
   ];
   return (
-    <Card className="border-none md:mx-8 mx-2 py-20">
+    <Card id="team" className="border-none md:mx-8 mx-2 py-20">
       <div className="ml-4">
         <div className="flex flex-row">
           <span>

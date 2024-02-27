@@ -12,7 +12,7 @@ import { Card } from "@/components/ui/card";
 
 const Services = () => {
   return (
-    <Card className="border-none md:mx-8 mx-2 py-10">
+    <Card id="services" className="border-none md:mx-8 mx-2 py-10">
       <div className="ml-4">
         <div className="flex flex-row">
           <span>
@@ -27,7 +27,7 @@ const Services = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-12 items-center mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 items-center mx-auto">
         <ServicesCard
           Icon={Smile}
           url="inner-page.html"
