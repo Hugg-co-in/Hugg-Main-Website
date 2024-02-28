@@ -4,7 +4,7 @@ import psychologistsImg from "../../../assets/img/psychologists-1.png";
 
 const About = () => {
   return (
-    <section className="container max-[767px]:p-2 pt-24">
+    <section id="about-us" className="container max-[767px]:p-2 pt-24">
       <div className="flex md:flex-row flex-col ">
         <div
           className="md:w-3/4 order-1 md:order-2"

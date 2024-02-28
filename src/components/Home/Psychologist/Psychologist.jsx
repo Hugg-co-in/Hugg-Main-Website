@@ -107,7 +107,7 @@ const Psychologist = () => {
     },
   ];
   return (
-    <div className="px-2 sm:px-16 md:px-8 lg:px-32 mx-auto py-10">
+    <div id="booking" className="px-2 sm:px-16 md:px-8 lg:px-32 mx-auto py-10">
       <h2 className="text-4xl font-[500] text-inherit py-10">
         Book therapy with your Psychologist
       </h2>
