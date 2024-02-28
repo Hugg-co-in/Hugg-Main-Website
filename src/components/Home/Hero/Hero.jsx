@@ -1,12 +1,7 @@
-import React, { useEffect } from "react";
-
+import React from "react";
 import { Laugh, Smartphone, UsersRound } from "lucide-react";
-import Aos from "aos";
-import "aos/dist/aos.css";
+
 const Hero = () => {
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
 
   return (
     <section
@@ -41,11 +36,9 @@ const Hero = () => {
                   <Laugh className="w-9 h-9" />
                 </span>
                 <h3 className="font-bold p-0 text-xl">
-                  <a
-                    href="inner-page.html"
-                    className="text-white transition ease-in-out duration-300 hover:text-[#17AD94]">
-                    Psycho&nbsp;Therapy
-                  </a>
+                  <span className="text-white transition ease-in-out duration-300 hover:text-[#17AD94]">
+                    <a href="inner-page.html">Psycho&nbsp;Therapy</a>
+                  </span>
                 </h3>
               </div>
 
@@ -54,11 +47,11 @@ const Hero = () => {
                   <Smartphone className="w-9 h-9" />
                 </span>
                 <h3 className="font-bold p-0 text-xl">
-                  <a
-                    href="https://topmate.io/have_a_hugg/282956"
-                    className="text-white transition ease-in-out duration-300 hover:text-[#17AD94] hover:border-[#17AD94]">
-                    Digital&nbsp;Products
-                  </a>
+                  <span className="text-white transition ease-in-out duration-300 hover:text-[#17AD94] hover:border-[#17AD94]">
+                    <a href="https://topmate.io/have_a_hugg/282956">
+                      Digital&nbsp;Products
+                    </a>
+                  </span>
                 </h3>
               </div>
 
@@ -67,11 +60,11 @@ const Hero = () => {
                   <UsersRound className="w-9 h-9" />
                 </span>
                 <h3 className="font-bold p-0 text-xl">
-                  <a
-                    href="https://topmate.io/have_a_hugg/178051?coupon_code=STUDENTs"
-                    className="text-white transition ease-in-out duration-300 hover:text-[#17AD94] hover:border-[#17AD94]">
-                    Group&nbsp;Therapy
-                  </a>
+                  <span className="text-white transition ease-in-out duration-300 hover:text-[#17AD94] hover:border-[#17AD94]">
+                    <a href="https://topmate.io/have_a_hugg/178051?coupon_code=STUDENTs">
+                      Group&nbsp;Therapy
+                    </a>
+                  </span>
                 </h3>
               </div>
             </div>

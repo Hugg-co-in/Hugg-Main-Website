@@ -32,16 +32,10 @@ const testimonialsData = [
   },
 ];
 
-import Aos from "aos";
-import "aos/dist/aos.css";
-
 const Testimonials = () => {
   const plugin = React.useRef(
     Autoplay({ delay: 3000, stopOnInteraction: true })
   );
-  React.useEffect(() => {
-    Aos.init({ duration: 3000 });
-  }, []);
   return (
     <div className="bg-testimonialBgImg bg-red-500 py-20 my-10">
       <Carousel

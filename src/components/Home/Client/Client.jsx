@@ -1,11 +1,6 @@
-import React, { useEffect } from "react";
-import Aos from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 
 const Client = () => {
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
   return (
     <section id="clients" className="clients">
       <div className="container" data-aos="zoom-in">

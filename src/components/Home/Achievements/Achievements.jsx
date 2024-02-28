@@ -12,17 +12,15 @@ import {
 import bImg from "../../../assets/img/achievements/bootcamp.jpg";
 import cnbcc from "../../../assets/img/achievements/cnbcc.jpeg";
 import anveshan from "../../../assets/img/achievements/anveshan (1).jpeg";
-import Aos from "aos";
-import "aos/dist/aos.css";
 
 const Achievements = () => {
   const plugin = React.useRef(
     Autoplay({ delay: 3000, stopOnInteraction: true })
   );
   const achievementsData = [
-    // {
-    //   imgSrc: bImg,
-    // },
+    {
+      imgSrc: bImg,
+    },
     {
       imgSrc: cnbcc,
     },
@@ -31,9 +29,6 @@ const Achievements = () => {
     },
   ];
 
-  React.useEffect(() => {
-    Aos.init({ duration: 3000 });
-  }, []);
   return (
     <Card id="team" className="border-none md:mx-8 mx-2 py-20">
       <div className="ml-4" data-aos="fade-up">

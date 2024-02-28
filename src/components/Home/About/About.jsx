@@ -1,16 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { CheckCheck } from "lucide-react";
 import psychologistsImg from "../../../assets/img/psychologists-1.png";
-import Aos from "aos";
-import "aos/dist/aos.css";
 
 const About = () => {
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
   return (
-    <section id="about-us" className="container max-[767px]:p-2 pt-24">
-      <div className="flex md:flex-row flex-col " data-aos="fade-up">
+    <section className="container max-[767px]:p-2 pt-24">
+      <div className="flex md:flex-row flex-col ">
         <div
           className="md:w-3/4 order-1 md:order-2"
           data-aos="fade-left"

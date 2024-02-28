@@ -1,11 +1,6 @@
-import React, { useEffect } from "react";
-import Aos from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 
 const Cta = () => {
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
   return (
     <div className="bg-bgImg2 w-[100%] bg-cover bg-fixed bg-center">
       <div className="bg-black bg-opacity-60 w-full h-full flex items-center justify-center  py-[60px] px-0">

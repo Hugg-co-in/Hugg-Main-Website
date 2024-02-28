@@ -74,8 +74,8 @@ const NavMenu = () => {
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-50 mt-5">
         <DropdownMenuGroup>
-          {navItems.map((nav) => (
-            <DropdownMenuItem key={nav.name}>
+          {navItems.map((nav, index) => (
+            <DropdownMenuItem key={index}>
               <AnchorLink href={nav.slug}>{nav.name}</AnchorLink>
             </DropdownMenuItem>
           ))}

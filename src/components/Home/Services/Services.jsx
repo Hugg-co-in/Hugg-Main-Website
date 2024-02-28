@@ -9,13 +9,8 @@ import {
   Sheet,
 } from "lucide-react";
 import { Card } from "@/components/ui/card";
-import Aos from "aos";
-import "aos/dist/aos.css";
 
 const Services = () => {
-  useEffect(() => {
-    Aos.init({ duration: 3000 });
-  }, []);
   return (
     <Card id="services" className="border-none md:mx-8 mx-2 py-10">
       <div data-aos="fade-up">

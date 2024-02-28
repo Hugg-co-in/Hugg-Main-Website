@@ -3,13 +3,8 @@ import React, { useEffect } from "react";
 import { Smile, Users, Clock, Award } from "lucide-react";
 import CountBox from "./CountBox";
 import smileImg from "../../../assets/img/smiles.jpg";
-import Aos from "aos";
-import "aos/dist/aos.css";
 
 const Counts = () => {
-  useEffect(() => {
-    Aos.init({ duration: 3000 });
-  }, []);
   return (
     <section>
       <div

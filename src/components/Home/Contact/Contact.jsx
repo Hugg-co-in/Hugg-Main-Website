@@ -1,12 +1,7 @@
 import React, { useEffect } from "react";
 import { Mail, Instagram, InstagramIcon } from "lucide-react";
-import Aos from "aos";
-import "aos/dist/aos.css";
 
 const Contact = () => {
-  useEffect(() => {
-    Aos.init({ duration: 3000 });
-  }, []);
   return (
     <div id="contact" className="container py-10" data-aos="fade-up">
       <div className="mb-10">

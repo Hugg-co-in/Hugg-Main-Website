@@ -1,13 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import img1 from "../../../assets/img/A VIRTUAL-HUG.png";
 import { SquareUser, Wifi, ReceiptText, Shield } from "lucide-react";
-import Aos from "aos";
-import "aos/dist/aos.css";
 
 const Features = () => {
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
   return (
     <section className="">
       <div className="container max-[767px]:p-0" data-aos="fade-up">

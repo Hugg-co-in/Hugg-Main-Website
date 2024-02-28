@@ -124,24 +124,13 @@ const Header = () => {
             <NavigationMenu>
               <NavigationMenuList>
                 {/* ------------------A------------------ */}
-                {navItems.map((item) =>
+                {navItems.map((item, index) =>
                   item.active ? (
-                    <NavigationMenuItem key={item.name}>
-                      <AnchorLink
-                        href={item.slug}
-                        className={({ isActive, isPending }) =>
-                          isPending
-                            ? "pending"
-                            : isActive
-                            ? `${item.css}`
-                            : "bg-black"
-                        }
-                        legacyBehavior
-                        passHref>
-                        <NavigationMenuLink
-                          className={`${navigationMenuTriggerStyle()} bg-black text-white`}>
+                    <NavigationMenuItem key={index}>
+                      <AnchorLink href={item.slug}>
+                        <span className="inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50 bg-black text-white">
                           {item.name}
-                        </NavigationMenuLink>
+                        </span>
                       </AnchorLink>
                     </NavigationMenuItem>
                   ) : null
@@ -149,19 +138,17 @@ const Header = () => {
                 {/* ------------------ C --------------------. */}
 
                 <Menubar className="border-none bg-black text-white">
-                  {triggeredNavMenu.map((item) => (
-                    <MenubarMenu key={item.menuBarName}>
+                  {triggeredNavMenu.map((item, index) => (
+                    <MenubarMenu key={index}>
                       <MenubarTrigger>
                         {item.menuBarName}
                         <ChevronDown />
                       </MenubarTrigger>
                       <MenubarContent>
                         {/* ------ 1 ----- */}
-                        {item.menuBarItems.map((i) => (
-                          <a href={i.slug}>
-                            <MenubarItem
-                              key={i.name}
-                              className="cursor-pointer">
+                        {item.menuBarItems.map((i, index) => (
+                          <a href={i.slug} key={index}>
+                            <MenubarItem className="cursor-pointer">
                               {i.name}
                               <MenubarShortcut>⌘T</MenubarShortcut>
                             </MenubarItem>

@@ -9,7 +9,6 @@ import Services from "./Services/Services";
 import Hero from "./Hero/Hero";
 import About from "./About/About";
 import Features from "./Features/Features";
-import Client from "./Client/Client";
 import Testimonials from "./Testimonials/Testimonials";
 
 const Home = () => {

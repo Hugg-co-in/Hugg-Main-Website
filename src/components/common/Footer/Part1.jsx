@@ -82,7 +82,7 @@ const Part1 = () => {
               </p>
               <span>
                 <a
-                  className=""
+                 
                   href="https://www.linkedin.com/build-relation/newsletter-follow?entityUrn=7038382516180762624"
                   target="_blank">
                   <Button className="bg-[#0a66c2] rounded-full py-2 px-4 ">
