@@ -1,18 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { Smile, Users, Clock, Award } from "lucide-react";
 import CountBox from "./CountBox";
 import smileImg from "../../../assets/img/smiles.jpg";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Counts = () => {
+  useEffect(() => {
+    Aos.init({ duration: 3000 });
+  }, []);
   return (
     <section>
-      <div className="flex flex-col min-[1180px]:flex-row px-0 sm:px-12 py-12">
+      <div
+        className="flex flex-col min-[1180px]:flex-row px-0 sm:px-12 py-12"
+        data-aos="fade-up">
         <div className="flex items-stretch justify-center h-96 w-full ">
-          <img src={smileImg} className="object-cover w-full min-h-[400px]" />
+          <img
+            src={smileImg}
+            className="object-cover w-full min-h-[400px]"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          />
         </div>
 
-        <div className="flex flex-col justify-center py-8 px-2 min-[1180px]:ml-8">
+        <div
+          className="flex flex-col justify-center py-8 px-2 min-[1180px]:ml-8"
+          data-aos="fade-left"
+          data-aos-delay="100">
           <h3 className="font-bold text-4xl text-black">
             We are spreading smiles
           </h3>

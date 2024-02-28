@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Cta = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <div className="bg-bgImg2 w-[100%] bg-cover bg-fixed bg-center">
       <div className="bg-black bg-opacity-60 w-full h-full flex items-center justify-center  py-[60px] px-0">
-        <div className="text-center text-white">
+        <div className="text-center text-white" data-aos="zoom-in">
           <h3 className="text-3xl font-bold">
             We made a meditation portal to make you calm
           </h3>

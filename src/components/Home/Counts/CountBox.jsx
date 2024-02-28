@@ -1,5 +1,6 @@
 import React from "react";
 import { Smile, Users, Clock, Award } from "lucide-react";
+
 const CountBox = ({ Icon, data, contentPart1, contentPart2 }) => {
   return (
     <div className="">

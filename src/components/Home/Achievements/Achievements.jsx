@@ -12,6 +12,8 @@ import {
 import bImg from "../../../assets/img/achievements/bootcamp.jpg";
 import cnbcc from "../../../assets/img/achievements/cnbcc.jpeg";
 import anveshan from "../../../assets/img/achievements/anveshan (1).jpeg";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Achievements = () => {
   const plugin = React.useRef(
@@ -28,9 +30,13 @@ const Achievements = () => {
       imgSrc: anveshan,
     },
   ];
+
+  React.useEffect(() => {
+    Aos.init({ duration: 3000 });
+  }, []);
   return (
     <Card id="team" className="border-none md:mx-8 mx-2 py-20">
-      <div className="ml-4">
+      <div className="ml-4" data-aos="fade-up">
         <div className="flex flex-row">
           <span>
             <h2 className="text-gray-400 uppercase font-bold">Achievements</h2>
@@ -48,6 +54,7 @@ const Achievements = () => {
         <Carousel
           plugins={[plugin.current]}
           className="w-full md:px-32 sm:px-16 max-[480px]:px-2 pt-16"
+          data-bs-ride="carousel"
           onMouseEnter={plugin.current.stop}
           onMouseLeave={plugin.current.play}>
           <CarouselContent>

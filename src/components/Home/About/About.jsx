@@ -1,15 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { CheckCheck } from "lucide-react";
 import psychologistsImg from "../../../assets/img/psychologists-1.png";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <section id="about-us" className="container max-[767px]:p-2 pt-24">
-      <div className="flex md:flex-row flex-col ">
-        <div className="md:w-3/4 order-1 md:order-2">
+      <div className="flex md:flex-row flex-col " data-aos="fade-up">
+        <div
+          className="md:w-3/4 order-1 md:order-2"
+          data-aos="fade-left"
+          data-aos-delay="100">
           <img src={psychologistsImg} />
         </div>
-        <div className="md:w-3/4 pt-4 pt-lg-0 order-2 md:order-1">
+        <div
+          className="md:w-3/4 pt-4 pt-lg-0 order-2 md:order-1"
+          data-aos="fade-right"
+          data-aos-delay="100">
           <h3 className="font-bold text-3xl">
             We assure you to bring smile on your face
           </h3>
