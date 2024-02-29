@@ -10,13 +10,14 @@ import Hero from "./Hero/Hero";
 import About from "./About/About";
 import Features from "./Features/Features";
 import Testimonials from "./Testimonials/Testimonials";
+import Client from "./Client/Client";
 
 const Home = () => {
   return (
     <>
       <Hero />
       <About />
-      {/* <Client /> */}
+      <Client />
       <Features />
       <Services />
       <Cta />

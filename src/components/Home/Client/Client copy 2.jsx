@@ -50,7 +50,7 @@ export const works = [
 ];
 const Client = () => {
   return (
-    <section id="clients" className="container max-[767px]:p-2 pt-24">
+    <section id="clients" className="clients">
       <ScrollArea className="w-full whitespace-nowrap rounded-md border">
         <div className="flex w-max sm:space-x-8 md:space-x-24 p-8">
           {brandImg.map((brand, index) => (

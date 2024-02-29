@@ -97,11 +97,11 @@ const Header = () => {
           <div className="flex items-center space-x-3 min-[901px]:space-x-0 rtl:space-x-reverse max-[900px]:mr-4 min-[901px]:order-3 max-[900px]:order-2">
             {/* <span className="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"> */}
             {/* <UserMenu /> */}
-            <a href="/booking">
+            <NavLink to="/booking">
               <Button className="border-[#17AD94] border-2 bg-none bg-transparent">
                 Book Therapy
               </Button>
-            </a>
+            </NavLink>
             {/* </span> */}
           </div>
           {/* ----------------------------------------------------------- */}
