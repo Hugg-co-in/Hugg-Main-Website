@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Laugh, Smartphone, UsersRound } from "lucide-react";
 
 const Hero = () => {
-
   return (
     <section
       id="hero"
