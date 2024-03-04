@@ -6,6 +6,7 @@ import {
   DropdownMenuPortal,
   DropdownMenuSeparator,
   DropdownMenuSub,
+  DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
@@ -73,12 +74,42 @@ const NavMenu = () => {
         </button>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="w-50 mt-5">
-        <DropdownMenuGroup>
+        <DropdownMenuGroup className="mt-5">
           {navItems.map((nav, index) => (
-            <DropdownMenuItem key={index}>
-              <AnchorLink href={nav.slug}>{nav.name}</AnchorLink>
+            <DropdownMenuItem key={index} className="focus:bg-[#17AD94]">
+              <AnchorLink
+                href={nav.slug}
+                className="w-full m-0 text-[#151515] py-2 px-5 font-[600]">
+                {nav.name}
+              </AnchorLink>
             </DropdownMenuItem>
           ))}
+          <DropdownMenuSeparator />
+          <DropdownMenuSub>
+            <DropdownMenuSubTrigger className="focus:bg-[#17AD94]">
+              <span className="w-full m-0 text-[#151515] py-2 px-5 font-[600]">
+                Psychology
+              </span>
+            </DropdownMenuSubTrigger>
+            <DropdownMenuPortal>
+              <DropdownMenuSubContent>
+                <DropdownMenuItem className="focus:bg-[#17AD94]">
+                  <a
+                    className="w-full m-0 text-[#151515] py-2 px-5 font-[600]"
+                    href="https://psychology.hugg.co.in">
+                    CBT Cohorts
+                  </a>
+                </DropdownMenuItem>
+                <DropdownMenuItem className="focus:bg-[#17AD94]">
+                  <a
+                    className="w-full m-0 text-[#151515] py-2 px-5 font-[600]"
+                    href="mailto:careers@hugg.co.in">
+                    Join our team
+                  </a>
+                </DropdownMenuItem>
+              </DropdownMenuSubContent>
+            </DropdownMenuPortal>
+          </DropdownMenuSub>
         </DropdownMenuGroup>
       </DropdownMenuContent>
     </DropdownMenu>

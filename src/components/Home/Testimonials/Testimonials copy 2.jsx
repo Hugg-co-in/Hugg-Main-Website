@@ -54,9 +54,11 @@ const Testimonials = () => {
       <div className="w-full lg:max-w-5xl mx-auto">
         <Carousel
           plugins={[plugin.current]}
-          onMouseEnter={plugin.current.stop}
+          // onMouseEnter={plugin.current.stop}
           onMouseLeave={plugin.current.play}
-          className="relative max-[480px]:px-2">
+          className="relative max-[480px]:px-2"
+          // onChange={() => console.log("Hi")}
+          onMouseEnter={console.log(plugin)}>
           <CarouselContent
             style={{
               transform: `translateX(-${activeIndex * 100}%)`,
@@ -82,6 +84,16 @@ const Testimonials = () => {
           {/* <CarouselPrevious onClick={prevSlide} />
         <CarouselNext onClick={nextSlide} /> */}
         </Carousel>
+        <div className="flex justify-center mt-4">
+          {testimonialsData.map((_, index) => (
+            <span
+              key={index}
+              onClick={() => setActiveIndex(index)}
+              className={`w-4 h-4 mx-2 cursor-pointer rounded-full ${
+                index === activeIndex ? "bg-[#17AD94]" : "bg-gray-400"
+              }`}></span>
+          ))}
+        </div>
       </div>
     </div>
   );
