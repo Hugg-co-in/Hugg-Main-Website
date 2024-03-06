@@ -11,12 +11,14 @@ import About from "./About/About";
 import Features from "./Features/Features";
 import Testimonials from "./Testimonials/Testimonials";
 import Client from "./Client/Client";
+import Psychologist from "./Psychologist/Psychologist";
 
 const Home = () => {
   return (
     <>
       <Hero />
       <About />
+      <Psychologist />
       <Client />
       <Features />
       <Services />

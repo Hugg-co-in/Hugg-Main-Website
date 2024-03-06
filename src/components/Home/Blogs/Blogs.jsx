@@ -1,43 +1,31 @@
 import React from "react";
 import BlogsCard from "./BlogsCard";
-import mentalheal1 from "../../../assets/img/addons/mentalheal1.jpg";
-import mentalheal2 from "../../../assets/img/addons/mentalheal2.jpg";
-import mentalheal3 from "../../../assets/img/addons/anx.jpg";
-import mentalheal4 from "../../../assets/img/addons/mentalheal4.jpg";
+import mentalheal1 from "../../../assets/img/addons/blog1.jpg";
+import mentalheal2 from "../../../assets/img/addons/blog2.jpg";
+import mentalheal3 from "../../../assets/img/addons/blog3.jpg";
+import mentalheal4 from "../../../assets/img/addons/blog5.jpg";
 
 const Blogs = () => {
   const blogsData = [
     {
-      redirectUrl: "http://blog.hugg.co.in/blog/64d19a000ee5100e21f362c7",
+      redirectUrl:
+        "https://www.linkedin.com/pulse/nithin-kamaths-story-why-taking-care-your-feelings-matters-6myoc/",
       imgSrc: `${mentalheal2}`,
-      title: "What is Mental Health?",
-      writtenBy: "Amna Ali",
-      blogMessage:
-        "Mental health is a condition of mental wellness that enables people to manage life's stressors, develop their potential, study and work effectively, and give back to their communities...",
     },
     {
-      redirectUrl: "http://blog.hugg.co.in/blog/64c7d0ed6ad39b219227dff3",
-      imgSrc: `${mentalheal4}`,
-      title: 'A Pain Named "Normalcy"',
-      writtenBy: "Riyanka",
-      blogMessage:
-        "  I am like a puzzle piece waiting to be placed. I’m sure most of us have heard of PTSD, but what about C-PTSD? It’s in the name, it is so darn...",
-    },
-    {
-      redirectUrl: "http://blog.hugg.co.in/blog/64c217db6a99aeedce527cfc",
-      imgSrc: `${mentalheal3}`,
-      title: "The role of social media in mental health",
-      writtenBy: "Aqsa",
-      blogMessage:
-        " Social media has grown to be a crucial component of today's world where individuals can communicate with one another, share ideas and thoughts, and express themselves verbally...",
-    },
-    {
-      redirectUrl: "http://blog.hugg.co.in/blog/64ca0dc963b0180d65d57867",
+      redirectUrl:
+        "https://www.linkedin.com/pulse/stress-management-techniques-haveahugg-fli0c/",
       imgSrc: `${mentalheal1}`,
-      title: "The stigma surrounding mental illness",
-      writtenBy: "Prachee",
-      blogMessage:
-        "Mental illnesses bring dual hardships for those who suffer from them. They have to cope with the symptoms of the illness as well as the negative attitudes....",
+    },
+    {
+      redirectUrl:
+        "https://www.linkedin.com/pulse/does-mental-health-count-disability-haveahugg-kmddc/",
+      imgSrc: `${mentalheal3}`,
+    },
+    {
+      redirectUrl:
+        "https://www.linkedin.com/pulse/affordable-therapy-india-haveahugg-xavcc/?trackingId=N8MJXqKcSaefgg8gTOypFA%3D%3D",
+      imgSrc: `${mentalheal4}`,
     },
   ];
   return (

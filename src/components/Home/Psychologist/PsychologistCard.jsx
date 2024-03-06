@@ -1,23 +1,43 @@
 import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 import React from "react";
 
-const PsychologistCard = ({ data }) => {
+const PsychologistCard = ({ psychologist }) => {
   return (
-    <div className="flex flex-row border min-w-96 w-full h-full">
-      <div className=" max-w-48">
-        <img
-          src={data.profilePhoto}
-          className="object-cover min-w-36 min-h-36"
-          alt="..."
-        />
-      </div>
-      <div className="flex flex-col p-4">
-        <div className="px-3">
-          <h4 className=" text-xl mt-10px font-[500] text-inherit">
-            {data.name} | {data.position}
-          </h4>
-          <p className="">{data.qualification}</p>
-          <p className="card-text">{data.description}</p>
+    <Card className="w-full max-w-sm shrink-0">
+      <div className="p-6 flex flex-col">
+        <div className="flex items-center space-x-4">
+          <div className="flex-shrink-0">
+            <img
+              alt="Doctor"
+              className="rounded-full"
+              height="96"
+              src={psychologist.profilePhoto}
+              style={{
+                aspectRatio: "96/96",
+                objectFit: "cover",
+              }}
+              width="96"
+            />
+          </div>
+          <div className="grid gap-0.5">
+            <h1 className="text-lg font-bold leading-none">
+              {psychologist.name}
+            </h1>
+            <p className="text-sm text-gray-500 dark:text-gray-400">
+              {psychologist.position}
+            </p>
+          </div>
+        </div>
+        <div className=" mt-6">
+          <p className="text-sm text-gray-500 dark:text-gray-400 text-wrap">
+            {psychologist.qualification}
+          </p>
+          <div className="text-wrap py-3">
+            <p className="text-sm text-gray-500 dark:text-gray-400">
+              {psychologist.description}
+            </p>
+          </div>
         </div>
         <div className="place-self-end mr-4 mt-auto mb-4">
           <a href="https://topmate.io/have_a_hugg/286223">
@@ -27,7 +47,7 @@ const PsychologistCard = ({ data }) => {
           </a>
         </div>
       </div>
-    </div>
+    </Card>
   );
 };
 
