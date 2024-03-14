@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { ArrowUp, Laugh, Smartphone, UsersRound } from "lucide-react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
@@ -76,9 +76,9 @@ const Hero = () => {
               <a
                 href="https://chat.whatsapp.com/GxM1U1YXKNFFwsFGIKlflB"
                 target="_blank"
-                class="bg-green-500 rounded-full shadow-md">
+                className="bg-green-500 rounded-full shadow-md">
                 <svg
-                  class="w-12 h-12"
+                  className="w-12 h-12"
                   viewBox="0 0 48 48"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg">
