@@ -3,7 +3,7 @@ import BlogsCard from "./BlogsCard";
 import mentalheal1 from "../../../assets/img/addons/blog1.jpg";
 import mentalheal2 from "../../../assets/img/addons/blog2.jpg";
 import mentalheal3 from "../../../assets/img/addons/blog3.jpg";
-import mentalheal4 from "../../../assets/img/addons/blog5.jpg";
+import mentalheal4 from "../../../assets/img/addons/blog6.png";
 
 const Blogs = () => {
   const blogsData = [
@@ -24,7 +24,7 @@ const Blogs = () => {
     },
     {
       redirectUrl:
-        "https://www.linkedin.com/pulse/affordable-therapy-india-haveahugg-xavcc/?trackingId=N8MJXqKcSaefgg8gTOypFA%3D%3D",
+        "https://www.linkedin.com/pulse/transformative-power-meditation-haveahugg/?trackingId=bgE%2BFJj9Sp2Gkz%2FrYTNUhg%3D%3D",
       imgSrc: `${mentalheal4}`,
     },
   ];

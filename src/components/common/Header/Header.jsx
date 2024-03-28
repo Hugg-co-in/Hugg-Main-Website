@@ -30,7 +30,7 @@ import {
   MenubarTrigger,
 } from "@/components/ui/menubar";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-
+import whatsappIcon from "@/assets/icons/whatsapp.svg";
 // ###########################################################
 const Header = () => {
   const navItems = [
@@ -94,28 +94,30 @@ const Header = () => {
         </div>
         {/* ----------------------------------------------------------- */}
         <div className="min-[901px]:order-3 max-[900px]:order-2 flex flex-row">
-          <div className="flex items-center space-x-3 min-[901px]:space-x-0 rtl:space-x-reverse max-[900px]:mr-4 min-[901px]:order-3 max-[900px]:order-2">
-            {/* <span className="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"> */}
-            {/* <UserMenu /> */}
-            <NavLink to="/booking">
-              <Button className="border-[#17AD94] border-2 bg-none bg-transparent">
-                Book Therapy
-              </Button>
-            </NavLink>
-            {/* </span> */}
+          <div className="flex items-center max-[480px]:space-x-1 space-x-3 min-[901px]:space-x-4 rtl:space-x-reverse max-[900px]:mr-4 max-[480px]:mr-2 min-[901px]:order-3 max-[900px]:order-2">
+            <div>
+              <a
+                href="https://chat.whatsapp.com/GxM1U1YXKNFFwsFGIKlflB"
+                target="_blank">
+                <Button className="border-[#17AD94] border-2 bg-none bg-transparent max-[900px]:p-1">
+                  Join our&nbsp;
+                  <img src={whatsappIcon} className=" w-4" alt="" />
+                  &nbsp;community
+                </Button>
+              </a>
+            </div>
+            <div className="max-[640px]:hidden">
+              <NavLink to="/booking">
+                <Button className="border-[#17AD94] border-2 bg-none bg-transparent">
+                  Book Therapy
+                </Button>
+              </NavLink>
+            </div>
           </div>
           {/* ----------------------------------------------------------- */}
           <div className="items-center justify-between hidden w-full max-[900px]:flex max-[900px]:w-auto  max-[900px]:order-3">
-            {/* <span className="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"> */}
             <NavMenu />
-            {/* </span> */}
           </div>
-          {/* ------------------------------------------------------------- */}
-          {/* <div className="flex items-center space-x-3 md:space-x-0 rtl:space-x-reverse max-[767px]:ml-4 md:order-4 max-[767px]:order-4">
-            <Link to="/cart">
-              <ShoppingCart />
-            </Link>
-          </div> */}
         </div>
         {/* ------------------------------------ */}
 
